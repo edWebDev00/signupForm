@@ -1,0 +1,140 @@
+/*font styling */
+@font-face {
+    font-family: 'abeezeeitalic';
+    src: url('fonts/abeezee-italic-webfont.woff2') format('woff2'),
+         url('fonts/abeezee-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;;
+}
+.sidebar {
+    background-image: url(images/bg.avif);
+    background-size:cover;
+    background-position: center;
+    width:40vw;
+    height:100vh;
+}
+.logoContainer {
+    background-color: rgba(9, 1, 1,.2);
+    width:40vw;
+    height:20vh;
+    position: relative;
+    top:197px;
+}
+.logo {
+    background-image: url(images/log.png);
+    width:40vw;
+    height:20vh;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+.logo:after {
+    content:"ODIN";
+    font-size: 4rem;
+    position: relative;
+    top:30%;
+    left:58%;
+    
+}
+/* Beginning of form */
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.message,.message2 {
+    font-size: 1.5rem;
+    margin: 1vw 4vw 1vw 4vw;
+    width: 50%;
+    font-weight: bolder;
+}
+.message {
+    margin-top: 6vw;
+}
+.messageContainer {
+    grid-area: 1/2;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #CCC;
+    width: 60vw;
+    height: 100vh;
+}
+form {
+    margin: 0;
+    width: 60vw;
+    border: 1px solid #CCC;
+    
+    
+}
+legend {
+    font-size: 1.5rem;
+    margin: 1vw 1vw 1vw 4vw;
+    width: 50%;
+    font-weight: bolder;
+}
+.listContainer {
+background-color: white;
+padding: 1vw 0;
+}
+ul {
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+    padding:0;
+    margin: .5vw 4vw 1.5vw 4vw;
+    width:75%;
+    
+}
+li {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+}
+label {
+    display: inline-block;
+    
+}
+
+button {
+      width: 14vw;
+      margin: 1vw 4vw;
+      padding: 1vw 3vw;
+      border-radius: 1rem;
+      font-size:  1.2rem;
+      
+}
+.login {
+  margin: 1vw 4vw;
+  font-size: 1.5rem;
+}
+/*Input start*/
+input {
+    padding: .25vw;
+    width:80%;
+    border: 1px solid #CCC;
+    margin-top: .5vw;
+}
+input:focus {
+    color: black;
+    
+}
+input:invalid {
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid blue;
+  }
