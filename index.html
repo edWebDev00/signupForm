@@ -21,30 +21,31 @@
             <div class="message2">You <em>know</em> you want to.</div>
         </div>
 
-        <form action="#" method="post">
+        <form id ="form" action="#" method="post">
             <legend>Let's do this!</legend>
             <div class="listContainer">
             <ul>
                 <li>
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" placeholder="Thor" name="firstName">
+                    <input type="text" id="firstName" name="firstName">
                 </li>
                 <li>
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" placeholder="Odinson" name="lastName">
+                    <input type="text" id="lastName"  name="lastName">
                 </li>
                 <li>
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" placeholder="Thor@odinson.com" name="email">
+                    <input type="email" id="email"  name="email"  minlength="8">
+                    <span class="error"></span>
                 </li>
                 <li>
                     <label for="phone">PHONE NUMBER</label>
                     <input type="text" id="phone" name="number" pattern="(\S\d{3}\S\d{3}\S\d{4})" title="Please enter a valid phone number"
-                    placeholder="(666)666-6666" required>
+                    >
                 </li>
                 <li>
                     <label for="password">PASSWORD</label>
-                    <input class="error" type="password" id="password" name="password" maxlength="7">
+                    <input  type="password" id="password" name="password" maxlength="7">
                 </li>
                 <li>
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
@@ -52,7 +53,7 @@
                 </li>
             </ul>
             </div>
-            <button type="submit">Create Account</button>
+            <button id="button" type="submit">Create Account</button>
         </form>
         
         <div class="login">Already have an account? <a href="3">Log in</a></div>
